@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Badge } from "react-bootstrap";
 import Modal from "../Modal";
+import { logo } from "../assets";
 import Cart from "../screens/Cart";
 import { RiShoppingCart2Line } from "react-icons/ri";
 import { useCartState } from "../hooks/contextReducer";
@@ -43,12 +44,7 @@ const Navbar = () => {
         <div className="container-fluid">
           {/* Logo link */}
           <Link className="navbar-brand" to="/">
-            <img
-              style={{ width: "25vh" }}
-              src="../assets/img/xomato-high-resolution-logo-black-transparent.png"
-              alt=""
-              srcSet=""
-            />
+            <img style={{ width: "25vh" }} src={logo} alt="" srcSet="" />
           </Link>
 
           {/* Navbar toggle button */}
