@@ -28,7 +28,7 @@
     "build": "react-scripts build",
     "test": "jest",
     "eject": "react-scripts eject",
-    "backend": "npm start --prefix ./backend",
+    "backend": "npm start --prefix ../Xomato_Server",
     "dev": "concurrently  \"npm start\" \"npm run backend\""
   },
   "eslintConfig": {
