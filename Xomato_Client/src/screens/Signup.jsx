@@ -30,7 +30,7 @@ const Signup = () => {
     try {
       // Axios is used to make a POST request to the server
       const response = await axios.post(
-        "http://localhost:3001/api/user/register",
+        "https://xomatobackend.onrender.com/api/user/register",
         values,
         {
           headers: {

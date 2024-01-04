@@ -26,7 +26,7 @@ const Login = () => {
     // Try to login the user
     try {
       const response = await axios.post(
-        "http://localhost:3001/api/user/login",
+        "https://xomatobackend.onrender.com/api/user/login",
         values
       );
       console.log(response);

@@ -18,7 +18,7 @@ const Home = () => {
   const itemData = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:3001/api/user/getAllFoodItems"
+        "https://xomatobackend.onrender.com/api/user/getAllFoodItems"
       );
       if (response.data.data) {
         setFoodItems(response.data.data.foodItems);

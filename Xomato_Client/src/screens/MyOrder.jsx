@@ -17,7 +17,7 @@ const MyOrder = () => {
       const userEmail = localStorage.getItem("userEmail");
       // Making a POST request to the server to get order data
       const response = await axios.post(
-        "http://localhost:3001/api/auth/myOrderData",
+        "https://xomatobackend.onrender.com/api/auth/myOrderData",
         { email: userEmail },
         { headers: { "Content-Type": "application/json" } }
       );

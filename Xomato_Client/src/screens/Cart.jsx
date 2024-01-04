@@ -34,7 +34,7 @@ const Cart = () => {
 
       // Get user email from local storage
       const response = await axios.post(
-        "http://localhost:3001/api/auth/orderData",
+        "https://xomatobackend.onrender.com/api/auth/orderData",
         {
           order_data: cartState,
           email: userEmail,
