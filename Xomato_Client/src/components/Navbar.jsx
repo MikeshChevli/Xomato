@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Badge } from "react-bootstrap";
 import Modal from "../Modal";
-import { logo } from "../assets";
+import { logo } from "../assets/img";
 import Cart from "../screens/Cart";
 import { RiShoppingCart2Line } from "react-icons/ri";
 import { useCartState } from "../hooks/contextReducer";
