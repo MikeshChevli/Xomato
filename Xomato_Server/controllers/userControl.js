@@ -2,9 +2,9 @@
 // The `import` statements are used to import external modules or files into the current JavaScript file.
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
-import UserModel from "../models/userModel";
-import FoodItemModel from "../models/foodItemModel";
-import FoodCategoryModel from "../models/foodCategoryModel";
+import UserModel from "../models/userModel.js";
+import FoodItemModel from "../models/foodItemModel.js";
+import FoodCategoryModel from "../models/foodCategoryModel.js";
 
 // This function handles the user registration.
 export const registerController = async (req, res) => {
