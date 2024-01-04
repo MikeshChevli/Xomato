@@ -1,1 +1,1 @@
-import { default as logo } from "./xomato-high-resolution-logo-black-transparent.png";
+export { default as logo } from "./xomato-high-resolution-logo-black-transparent.png";
