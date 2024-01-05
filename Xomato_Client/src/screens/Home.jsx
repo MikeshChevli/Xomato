@@ -36,7 +36,7 @@ const Home = () => {
   }, []);
 
   return (
-    <>
+    <div className="min-vh-100">
       {/* Navbar component */}
       <Navbar />
 
@@ -149,7 +149,7 @@ const Home = () => {
 
       {/* Footer component */}
       <Footer />
-    </>
+    </div>
   );
 };
 

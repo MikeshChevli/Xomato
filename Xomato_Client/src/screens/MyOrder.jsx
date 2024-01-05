@@ -37,7 +37,7 @@ const MyOrder = () => {
 
   // Rendering the component
   return (
-    <div>
+    <div className="min-vh-100">
       <Navbar />
       <div className="container">
         <div className="row">
