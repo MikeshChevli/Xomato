@@ -105,13 +105,14 @@ Xomato is a food delivery application that allows users to explore and order fro
 
 3. Install dependencies for the server:
 
-    cd server
+    cd Xomato_Server
     npm install
 
 4. Install dependencies for the client:
 
-    cd client
-    npm install
+    cd Xomato_Client
+    Application is designed to render a production build of react framework, so you can skip this step
+
 
 5. Create a .env file in the server directory with the following content:
 
@@ -121,12 +122,7 @@ Xomato is a food delivery application that allows users to explore and order fro
 
 6. Start the MongoDB server.
 
-    cd server
+    cd Xomato_Server
     npm start
 
-7. In a new terminal, start the client:
-
-    cd client
-    npm start
-
-8. Access the application in your browser at http://localhost:3000 (or the specified port).
+7. Access the application in your browser at http://localhost:3000 (or the specified port).
