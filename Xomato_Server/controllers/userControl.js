@@ -22,21 +22,21 @@ export const registerController = async (req, res) => {
 
     // Password validation criteria //
     // Check if the password provided by the user meets the required criteria.
-    const isPasswordValid =
-      password.length >= 8 &&
-      /[A-Z]/.test(password) &&
-      /[a-z]/.test(password) &&
-      /\d/.test(password) &&
-      /[!@#$%^&*(),.?":{}|<>]/.test(password);
+    // const isPasswordValid =
+    //   password.length >= 8 &&
+    //   /[A-Z]/.test(password) &&
+    //   /[a-z]/.test(password) &&
+    //   /\d/.test(password) &&
+    //   /[!@#$%^&*(),.?":{}|<>]/.test(password);
 
     // Check if the password provided by the user meets the required criteria.
-    if (!isPasswordValid) {
-      return res.status(400).send({
-        success: false,
-        message:
-          "Password must be at least 8 characters long and contain a mix of uppercase and lowercase letters, digits, and special characters.",
-      });
-    }
+    // if (!isPasswordValid) {
+    //   return res.status(400).send({
+    //     success: false,
+    //     message:
+    //       "Password must be at least 8 characters long and contain a mix of uppercase and lowercase letters, digits, and special characters.",
+    //   });
+    // }
 
     // Encrypt the user's password before saving it to the database.
     const salt = await bcrypt.genSalt(10);
@@ -68,18 +68,18 @@ export const loginController = async (req, res) => {
   try {
     // Check if a user with the provided email exists in the database.
     const user = await UserModel.findOne({ email: req.body.email });
-    
+
     // If the user is not found, return a response indicating that the user does not exist.
     if (!user) {
       return res
-      .status(200)
-      .send({ success: false, message: "User not found" });
+        .status(200)
+        .send({ success: false, message: "User not found" });
     }
-    
+
     // Compare the provided password with the hashed password stored in the database.
     const isMatch = await bcrypt.compare(req.body.password, user.password);
 
-    // Check if the provided password matches the hashed password stored in the database.    
+    // Check if the provided password matches the hashed password stored in the database.
     if (!isMatch) {
       return res
         .status(200)
@@ -90,7 +90,7 @@ export const loginController = async (req, res) => {
     const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, {
       expiresIn: "1d",
     });
-    
+
     // Send a response to the client indicating that the user has been logged in successfully.
     res.status(200).send({ success: true, message: "Login Successful", token });
   } catch (error) {
@@ -107,7 +107,7 @@ export const loginController = async (req, res) => {
 // This function fetches the food items and food categories from the database.
 export const getFoodItemsController = async (req, res) => {
   try {
-    // Find all food items and food categories from the database.    
+    // Find all food items and food categories from the database.
     const foodItems = await FoodItemModel.find({});
 
     // Find all food categories from the database.
