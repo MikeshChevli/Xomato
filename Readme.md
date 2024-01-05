@@ -25,77 +25,9 @@ Xomato is a food delivery application that allows users to explore and order fro
 - MongoDB server
 
 ### Steps
-
 1. Clone the repository:
 
-git clone https://github.com/your-username/xomato.git
-# Xomato Food Delivery Application
-
-## Introduction
-
-Xomato is a food delivery application that allows users to explore and order from a variety of restaurants.
-
-## Features
-
-- Browse and search for food items by category.
-- Add items to the cart and place orders.
-- User authentication and authorization.
-
-## Technologies Used
-
-- Node.js
-- Express.js
-- MongoDB
-- React.js
-
-## Installation
-
-### Prerequisites
-
-- Node.js installed on your machine
-- MongoDB server
-
-### Steps
-
-1. Clone the repository:
-
-   ```bash
    git clone https://github.com/MikeshChevli/Xomato.git
-
-Certainly! Below is a basic template for your README.md file. Please replace the placeholder text with the actual details and customize it further as needed.
-
-markdown
-Copy code
-# Xomato Food Delivery Application
-
-## Introduction
-
-Xomato is a food delivery application that allows users to explore and order from a variety of restaurants.
-
-## Features
-
-- Browse and search for food items by category.
-- Add items to the cart and place orders.
-- User authentication and authorization.
-
-## Technologies Used
-
-- Node.js
-- Express.js
-- MongoDB
-- React.js
-
-## Installation
-
-### Prerequisites
-
-- Node.js installed on your machine
-- MongoDB server
-
-### Steps
-1. Clone the repository:
-
-   git clone https://github.com/your-username/xomato.git
 
 2. Navigate to the project directory:
 
