@@ -9,7 +9,6 @@ Xomato is a food delivery application that allows users to explore and order fro
 - Browse and search for food items by category.
 - Add items to the cart and place orders.
 - User authentication and authorization.
-- ...
 
 ## Technologies Used
 
@@ -17,7 +16,6 @@ Xomato is a food delivery application that allows users to explore and order fro
 - Express.js
 - MongoDB
 - React.js
-- ...
 
 ## Installation
 
@@ -30,8 +28,7 @@ Xomato is a food delivery application that allows users to explore and order fro
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/your-username/xomato.git
+git clone https://github.com/your-username/xomato.git
 # Xomato Food Delivery Application
 
 ## Introduction
@@ -43,7 +40,6 @@ Xomato is a food delivery application that allows users to explore and order fro
 - Browse and search for food items by category.
 - Add items to the cart and place orders.
 - User authentication and authorization.
-- ...
 
 ## Technologies Used
 
@@ -51,7 +47,6 @@ Xomato is a food delivery application that allows users to explore and order fro
 - Express.js
 - MongoDB
 - React.js
-- ...
 
 ## Installation
 
