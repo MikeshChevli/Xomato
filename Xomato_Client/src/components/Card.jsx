@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useCartState, useCartDispatch } from "../hooks/contextReducer";
+import { message } from "antd";
 
 const Card = (prop) => {
   // Ref to get the size dropdown value
@@ -50,7 +51,7 @@ const Card = (prop) => {
           category: foodItem.category,
           img: foodItem.img,
         });
-        console.log("Size is different, so simply ADD one more to the list");
+        message.info("Size is different, so simply ADD one more to the list");
       }
     } else {
       // Add a new item to the cart if it doesn't exist

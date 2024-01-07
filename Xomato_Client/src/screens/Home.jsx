@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Card, Footer, Navbar } from "../components";
 import axios from "axios";
+import { message } from "antd";
 
 /**
  * Home component that displays the food items and categories.
@@ -25,7 +26,7 @@ const Home = () => {
         setFoodCategory(response.data.data.foodCategory);
       }
     } catch (error) {
-      console.error(error);
+      message.error(error);
     }
   };
 

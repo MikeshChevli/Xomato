@@ -4,6 +4,7 @@ import axios from "axios";
 // Importing components
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import { message } from "antd";
 
 // MyOrder component
 const MyOrder = () => {
@@ -26,7 +27,7 @@ const MyOrder = () => {
       setOrderData(response.data.orderData);
     } catch (error) {
       // Logging any errors
-      console.error("Error fetching order data:", error);
+      message.error("Error fetching order data:", error);
     }
   };
 

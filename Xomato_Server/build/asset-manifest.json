@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.dc829171.css",
-    "main.js": "/static/js/main.792d5004.js",
+    "main.js": "/static/js/main.e9212b2c.js",
     "static/media/xomato-high-resolution-logo-black-transparent.png": "/static/media/xomato-high-resolution-logo-black-transparent.2646f8d1a7e1b6de18fa.png",
     "index.html": "/index.html",
     "main.dc829171.css.map": "/static/css/main.dc829171.css.map",
-    "main.792d5004.js.map": "/static/js/main.792d5004.js.map"
+    "main.e9212b2c.js.map": "/static/js/main.e9212b2c.js.map"
   },
   "entrypoints": [
     "static/css/main.dc829171.css",
-    "static/js/main.792d5004.js"
+    "static/js/main.e9212b2c.js"
   ]
 }

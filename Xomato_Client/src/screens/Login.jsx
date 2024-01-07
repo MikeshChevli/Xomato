@@ -1,4 +1,5 @@
 // Importing necessary modules and hooks
+import { message } from "antd";
 import axios from "axios";
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
@@ -7,7 +8,7 @@ import { Link, useNavigate } from "react-router-dom";
 const Login = () => {
   // Using the useNavigate hook from react-router-dom to programmatically navigate through our application
   const navigate = useNavigate();
-  
+
   // Using the useState hook to manage the state of our form
   const [values, setValues] = useState({
     email: "",
@@ -29,22 +30,21 @@ const Login = () => {
         "https://xomatobackend.onrender.com/api/user/login",
         values
       );
-      console.log(response);
       // If the login is successful, store the token and user email in the local storage and navigate to the home page
       if (response.data.success) {
         localStorage.setItem("token", response.data.token);
         localStorage.setItem("userEmail", values.email);
-        console.log(`${response.data.message}`);
+        message.success(`${response.data.message}`);
         navigate("/");
       } else {
-        console.log(`${response.data.message}`);
+        message.info(`${response.data.message}`);
       }
     } catch (error) {
-      console.log(`Error message : ${error}`);
-      console.log("Something went wrong!");
+      message.error(`Error message : ${error}`);
+      message.error("Something went wrong!");
     }
   };
-  
+
   // Render the login form
   return (
     <div className="container mt-5">

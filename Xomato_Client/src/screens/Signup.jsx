@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
+import { message } from "antd";
 
 // Signup component
 // This component is used to handle the user registration process
@@ -43,7 +44,7 @@ const Signup = () => {
         navigate("/login");
       }
     } catch (error) {
-      console.log("Something went wrong!");
+      message.error("Something went wrong!");
     }
   };
   

@@ -2,6 +2,7 @@ import React from "react";
 import { useCartState, useCartDispatch } from "../hooks/contextReducer";
 import { MdDeleteForever } from "react-icons/md";
 import axios from "axios";
+import { message } from "antd";
 
 /**
  * Cart component that displays the items in the user's cart.
@@ -51,10 +52,10 @@ const Cart = () => {
       if (response.status === 200) {
         cartDispatch({ type: "EMPTY_CART" });
       } else {
-        console.error("Checkout failed:", response.data);
+        message.error("Checkout failed:", response.data);
       }
     } catch (error) {
-      console.error("Error:", error);
+      message.error("Error:", error);
     }
   };
 
